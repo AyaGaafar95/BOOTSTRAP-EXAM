@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --blak: #343434;
+  /* #6495ed; */
+}
+section {
+  padding: 7% 0;
+}
+/* .container {
+  background-color: white;
+} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f7f7;
+  height: 100%;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: var(--blak);
+  font-weight: 900px;
+}
+#Home {
+  background: url(img/bg.jpg) center fixed no-repeat;
+  background-size: cover;
+}
+#Home .social li {
+  width: 35px;
+  height: 35px;
+  background-color: #122629;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#Home .layer {
+  min-height: 100vh;
+}
+#Home .layer p::after {
+  content: "";
+  animation: typing 10s infinite alternate;
+}
+/*  */
+
+@keyframes typing {
+  0% {
+    content: "Fr|";
+  }
+  3% {
+    content: " ont|";
+  }
+  6% {
+    content: "  end|";
+  }
+  15% {
+    content: " |";
+  }
+
+  30% {
+    content: "we |";
+  }
+  35% {
+    content: " web|";
+  }
+  50% {
+    content: "De|";
+  }
+  60% {
+    content: " Devel|";
+  }
+  100% {
+    content: " Developer|";
+  }
+}
+
+/* section two */
+.btn-1:hover {
+  background-color: white;
+  color: black;
+}
+.progress-bar {
+  background-color: var(--blak);
+}
+/* section three */
+
+.icon:hover {
+  color: white;
+  background-color: var(--blak);
+  border-radius: 50%;
+  transition: 0.2s;
+}
+/* section 5 */
+.carousel-item p {
+  word-spacing: 2px;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
+}
+#Clients .carousel-indicators [data-bs-target] {
+  all: unset;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background-color: var(--blak);
+  border-radius: 50%;
+  margin-inline: 5px;
+  opacity: 0.7;
+}
+/* i write class ".active" becouse this classe was moved between  indicators */
+#Clients .carousel-indicators .active {
+  opacity: 1;
+}
+/* section 4 */
+#Works .nav-pills .nav-link {
+  background-color: white;
+  color: var(--blak);
+  font-weight: bold;
+  position: relative;
+}
+/* #Works .nav-pills .nav-link.active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  color: var(--blak);
+} */
+/* .nav-item:before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #111;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.4s;
+  z-index: -1;
+} */
+/* #Works .image img {
+  transition: 0.5s;
+}
+#Works .image:hover img {
+  transform: scale(1.2);
+} */
+#Works .layer {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  opacity: 0;
+  transition: all 0.5s;
+  /* position-absolute start-0 top-0 */
+}
+#Works .image:hover .layer {
+  opacity: 1;
+}
+/* Blog */
+#Blog .carousel-indicators [data-bs-target] {
+  all: unset;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background-color: var(--blak);
+  border-radius: 50%;
+  margin-inline: 5px;
+  opacity: 0.7;
+}
+/* i write class ".active" becouse this classe was moved between  indicators */
+#Blog .carousel-indicators .active {
+  opacity: 1;
+}
+footer {
+  background-color: var(--blak);
+  height: 20%;
+  margin-bottom: 0;
+}
+footer p {
+  color: white;
+}
+#Contact .form-control {
+  background-color: rgba(241, 240, 240, 0.975);
+}
+
+#Contact .form-control:focus {
+  outline: none;
+}
