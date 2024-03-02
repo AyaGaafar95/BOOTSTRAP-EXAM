@@ -50,42 +50,95 @@ body {
 #Home .layer {
   min-height: 100vh;
 }
-#Home .layer p::after {
+/* #Home .layer p::after {
   content: "";
   animation: typing 10s infinite alternate;
-}
+} */
 /*  */
+/* .typing-p {
+  display: grid;
+  place-items: center;
+}
+
+.typingP {
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
 
 @keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+} */
+.wrapper {
+  /*This part is important for centering*/
+  margin-bottom: 2em;
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* @keyframes typing {
   0% {
     content: "Fr|";
   }
   3% {
-    content: " ont|";
+    content: " o|";
   }
   6% {
-    content: "  end|";
+    content: "  t|";
   }
   15% {
     content: " |";
   }
 
   30% {
-    content: "we |";
+    content: "e |";
   }
   35% {
-    content: " web|";
+    content: " en|";
   }
   50% {
-    content: "De|";
+    content: "end|";
   }
   60% {
-    content: " Devel|";
+    content: " Deve|";
   }
   100% {
     content: " Developer|";
   }
-}
+} */
 
 /* section two */
 .btn-1:hover {
